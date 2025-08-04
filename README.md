@@ -1,2 +1,5 @@
-# SPI-Slave-with-Single-Port-RAM-
-This module implements an SPI Slave interface integrated with a Single-Port RAM for efficient serial communication and local data storage. Designed in Verilog, it allows seamless data exchange between a master SPI device and internal memory, commonly used in embedded systems and SoC communication frameworks.
+The Serial Peripheral Interface (SPI) Slave Interface is a fundamental component in synchronous serial communication systems, designed to operate in a master-slave configuration. In this architecture, the master device initiates and controls all data transfers by providing the clock signal, while the slave device passively responds to the master's instructions.
+
+The SPI slave receives data via the MOSI (Master Out, Slave In) line and transmits data through the MISO (Master In, Slave Out) line, with all communication synchronized to the clock signal (SCK) provided by the master. This interface supports full-duplex transmission, allowing simultaneous data sending and receiving, and can be configured to accommodate various SPI modes defined by clock polarity and phase.
+
+Due to its simplicity, flexibility, and high-speed capabilities, the SPI slave interface is widely used in embedded systems, enabling communication between microcontrollers and peripheral devices such as sensors, memory modules, and displays. However, its operation is entirely dependent on the master, as it cannot initiate communication or generate its own clock.
